@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+     <link rel="shotcut icon" href="./favicon/favicon-16x16.png">
+     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+     <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+     <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+     <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+     <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+     <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+     <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+     <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+     <link rel="manifest" href="/manifest.json">
+     <meta name="msapplication-TileColor" content="#ffffff">
+     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+     <meta name="theme-color" content="#ffffff">
+       
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+
+    <!-- js -->
+    <script src="./js/script.js" defer></script>
+    <title>minimute</title>
+  </head>
+  <body>
+      <div class="banner_bg">
+        <div class="banner">
+          <div class="logo">
+            <img src="./img/logo.svg" alt="" />
+          </div>
+          <ul class="menu">
+            <li data-tab="tab1" class="menu_text notosans">shop</li>
+            <li data-tab="tab2" class="menu_text notosans">about</li>
+            <li class="menu_text notosans">search</li>
+            <li class="menu_text notosans">cart</li>
+            <li class="language notosans">kr</li>
+          </ul>  
+          <!-- 햄버거버튼 -->
+          <a href="#none" id="hamburger"
+            ><span></span><span></span><span></span
+          ></a>
+        </div>
+      </div>
+
+      <!-- 서브메뉴박스 -->
+        <div class="submenu_box">
+          <ul id="tab1" class="submenu home">
+            <li class="tabbox">
+              <a href="#none" class="submenu_detail notosans">new arrival</a>
+              <a href="#none" class="submenu_detail notosans">all items</a>
+              <a href="#none" class="submenu_detail notosans"
+                >mood vintage bag</a
+              >
+              <a href="#none" class="submenu_detail notosans">ferretti bag</a>
+              <a href="#none" class="submenu_detail notosans">remoodbag</a>
+              <a href="#none" class="submenu_detail notosans">clo bag</a>
+              <a href="#none" class="submenu_detail notosans">twin bag</a>
+              <a href="#none" class="submenu_detail notosans">minimal bag</a>
+              <a href="#none" class="submenu_detail notosans">shoes</a>
+              <a href="#none" class="submenu_detail notosans">wallet</a>
+              <a href="#none" class="submenu_detail notosans">accessory</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="submenu_box">
+          <ul id="tab2" class="submenu about">
+            <li class="tabbox">
+              <a href="#none" class="submenu_detail notosans">brand story</a>
+              <a href="#none" class="submenu_detail notosans">lookbook</a>
+              <a href="#none" class="submenu_detail notosans">showroom</a>
+              <a href="#none" class="submenu_detail notosans">customer care</a>
+
+              <a href="#none" class="submenu_detail notosans"
+                ><br /><br />login</a
+              >
+
+              <a href="#none" class="submenu_detail notosans">create account</a>
+            </li>
+          </ul>
+        </div>
+    <div class="wrap">
+      <!-- sec_1, banner-->
+      <div class="content">
+        <div class="sec_1">
+          <div class="header">
+            <h1 class="main">enjoy your trip</h1>
+            <p class="subject">minitmute start with an idea of</p>
+            <p class="subject">making a light and small bag for traveling</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- sec_2 -->
+      <div class="sec_2">
+        <div class="container">
+          <div class="card last">
+            <div class="card_img">
+              <img src="./img/card1.jpg" alt="" />
+            </div>
+            <p class="card_text">24ss lookbook</p>
+          </div>
+          <div class="card">
+            <div class="card_img">
+              <img src="./img/card2.jpg" alt="" />
+            </div>
+            <p class="card_text">24fw lookbook</p>
+          </div>
+          <div class="card">
+            <div class="card_img">
+              <img src="./img/card3.jpg" alt="" />
+            </div>
+            <p class="card_text">25ss lookbook</p>
+          </div>
+        </div>
+
+        <!-- 계속 굴러가는 로고 -->
+        <div class="play_logo">
+          <div class="play_logo_inner">
+            <img src="./img/pattern.png" alt="" />
+            <img src="./img/pattern.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- sec_3 -->
+      <div class="sec_3">
+        <div class="container">
+          <h2 class="maintitle">new arrival</h2>
+          <div class="arrival_content">
+            <div class="arrival_img">
+              <img src="./img/newarrival.png" alt="" />
+            </div>
+
+            <div class="title_content">
+              <div class="title">
+                <div class="title_img con_1"></div>
+                <div class="title_text">
+                  <p><a href="#none" class="name notosans">twin mini</a></p>
+                  <p><a href="#none" class="color notosans">ivory</a></p>
+                  <p><a href="#none" class="price notosans">240,000</a></p>
+                </div>
+              </div>
+
+              <div class="title">
+                <div class="title_img con_2"></div>
+                <div class="title_text">
+                  <p><a href="#none" class="name notosans">twin mini</a></p>
+                  <p><a href="#none" class="color notosans">red wine</a></p>
+                  <p><a href="#none" class="price notosans">240,000</a></p>
+                </div>
+              </div>
+
+              <div class="title">
+                <div class="title_img con_3"></div>
+                <div class="title_text">
+                  <p><a href="#none" class="name notosans">twin bag</a></p>
+                  <p><a href="#none" class="color notosans">lemon</a></p>
+                  <p><a href="#none" class="price notosans">280,000</a></p>
+                </div>
+              </div>
+
+              <div class="title">
+                <div class="title_img con_4"></div>
+                <div class="title_text">
+                  <p><a href="#none" class="name notosans">twin mini</a></p>
+                  <p><a href="#none" class="color notosans">soho pink</a></p>
+                  <p><a href="#none" class="price notosans">240,000</a></p>
+                </div>
+              </div>
+
+              <div class="title">
+                <div class="title_img con_5"></div>
+                <div class="title_text">
+                  <p><a href="#none" class="name notosans">twin mini</a></p>
+                  <p><a href="#none" class="color notosans">gray beige</a></p>
+                  <p><a href="#none" class="price notosans">240,000</a></p>
+                </div>
+              </div>
+
+              <div class="title">
+                <div class="title_img con_6"></div>
+                <div class="title_text">
+                  <p><a href="#none" class="name notosans">twin bag</a></p>
+                  <p><a href="#none" class="color notosans">black</a></p>
+                  <p><a href="#none" class="price notosans">280,000</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- sec_4 -->
+      <div class="sec_4">
+        <div class="container">
+          <h3 class="subtitle">showroom</h3>
+          <div class="showroom_content">
+            <div class="showroom_img">
+              <img src="./img/showRoom_image.jpg" alt="" />
+            </div>
+            <div class="shop_content">
+              <div class="shop han">
+                <p><a href="#none" class="popup">HANNAM FLAGSHIP STORE</a></p>
+
+                <div class="shop_img">
+                  <img src="./img/hannam1.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="shop seong">
+                <p><a href="#none" class="popup">SEONGSU STORE</a></p>
+
+                <div class="shop_img">
+                  <img src="./img/seongso.jpeg" alt="" />
+                </div>
+              </div>
+
+              <div class="shop busan">
+                <p><a href="#none" class="popup">SHINSEGAE CENTUM</a></p>
+
+                <div class="shop_img">
+                  <img src="./img/sinsegae.jpeg" alt="" />
+                </div>
+              </div>
+
+              <div class="shop tokyo">
+                <p><a href="#none" class="popup">TOKYO STORE</a></p>
+
+                <div class="shop_img">
+                  <img src="./img/tokyo.jpeg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- sec_5, swiper -->
+      <div class="sec_5">
+        <div class="container">
+          <h3 class="subtitle">best seller</h3>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/best1.png" alt="" />
+                <p>
+                  <a href="#none" class="best_name notosans"
+                    >brett mini<br />ivory<br />
+                    310,000</a
+                  >
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/best2.png" alt="" />
+                <p>
+                  <a href="#none" class="best_name notosans"
+                    >brett mini<br />caviar apricot <br />
+                    340,000</a
+                  >
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/best3.png" alt="" />
+                <p>
+                  <a href="#none" class="best_name notosans"
+                    >brett mini<br />pale green<br />
+                    340,000</a
+                  >
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/best4.png" alt="" />
+                <p>
+                  <a href="#none" class="best_name notosans"
+                    >brett mini<br />silver<br />
+                    340,000</a
+                  >
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/best5.png" alt="" />
+                <p>
+                  <a href="#none" class="best_name notosans"
+                    >brett bag<br />ivory<br />
+                    410,000</a
+                  >
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/best6.png" alt="" />
+                <p>
+                  <a href="#none" class="best_name notosans"
+                    >brett bag<br />caviar apricot<br />
+                    440,000</a
+                  ><br /><br /><br />
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/best7.png" alt="" />
+                <p>
+                  <a href="#none" class="best_name notosans"
+                    >brett bag<br />pale green<br />
+                    440,000</a
+                  >
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/best8.png" alt="" />
+                <p>
+                  <a href="#none" class="best_name notosans"
+                    >brett bag<br />silver<br />
+                    440,000</a
+                  >
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/best9.png" alt="" />
+                <p>
+                  <a href="#none" class="best_name notosans"
+                    >brett bag<br />soap pink<br />
+                    440,000</a
+                  >
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/best10.png" alt="" />
+                <p>
+                  <a href="#none" class="best_name notosans"
+                    >brett bag<br />black<br />
+                    410,000</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- sec_6 -->
+      <div class="sec_6">
+        <div class="container">
+          <div class="video">
+            <video
+              src="./video/toter.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+            ></video>
+          </div>
+        </div>
+      </div>
+
+      <!-- sec_7 -->
+      <div class="sec_7">
+        <div class="container">
+          <h3 class="brand_text">brand story</h3>
+          <p class="sub_text notosans">
+            미닛뮤트는 2015년 설립되었으며,<br />미니멀하지만 실용적인 가방을
+            만드는 브랜드입니다.<br />시간이 지날수록 아름다워지는 가방을
+            생각하며 만들고 있습니다.
+          </p>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="footer_area">
+        <div class="container">
+          <div class="footer_box">
+            <div class="footer_sub">
+              <div class="footer_logo">
+                <img src="./img/logo.svg" alt="" />
+              </div>
+              <p class="footer_text">SEOUL SEONGDONG-GU YEONMUJANG-GIL 57 2F</p>
+              <p class="footer_text">
+                E-MAIL info@minitmute.com ㅣ MAIL ORDER NUMBER :
+                2023-SEOULSEONGDONG-0932
+              </p>
+            </div>
+
+            <div class="search_btn">
+              <input type="search" placeholder="search" />
+              <div class="arrow"></div>
+            </div>
+          </div>
+      </footer>
+      <div class="footer_main">
+            <div class="footer_menu">
+              <p><a href="#none" class="click">customer care</a></p>
+              <p><a href="#none" class="click">contact</a></p>
+              <p><a href="#none" class="click">follow us</a></p>
+            </div>
+            <p class="copy">Copyright Ⓒ minimute Inc AlL rights reserved</p>
+          </div>
+        </div>
+  </body>
+</html>
