@@ -3,14 +3,6 @@ body {
   background-color: #fcfbf7;
 }
 
-.wrap {
-  transition: 0.3s;
-}
-
-.wrap.active {
-  filter: blur(1.2px);
-}
-
 #hamburger {
   display: none;
 }
@@ -29,7 +21,8 @@ body {
 .sec_2 .container,
 .sec_3 .container,
 .sec_4 .container,
-.sec_5 .container {
+.sec_5 .container,
+.footer_area .container {
   padding-top: 120px;
   padding-bottom: 100px;
 }
@@ -55,7 +48,7 @@ body {
   transition: 0.3s ease;
   position: fixed;
   z-index: 999;
-  width: 100%;
+  width: 100vw;
 }
 
 .banner_bg.scroll {
@@ -233,12 +226,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
 .title_content {
   width: 940px;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 20px;
   margin-right: 100px;
 }
 
@@ -475,6 +467,7 @@ body {
 
 .video {
   margin-top: 80px;
+  height: 800px;
   font-size: 0;
 }
 
@@ -493,10 +486,8 @@ body {
 }
 
 /* footer */
-
-.footer_area .container {
-  padding-top: 120px;
-  padding-bottom: 40px;
+.footer_area {
+  height: 352px;
 }
 
 .footer_logo {
@@ -506,22 +497,16 @@ body {
 }
 
 .footer_menu {
-  padding-left: 90px;
   display: flex;
   gap: 54px;
 }
 
 .footer_main {
-  padding-bottom: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 24px;
   border-top: 1px solid #2e2e2e;
-}
-
-.copy {
-  padding-right: 90px;
 }
 
 .footer_box {
@@ -530,9 +515,9 @@ body {
   align-items: center;
 }
 
-/* .footer_sub {
+.footer_sub {
   margin-bottom: 40px;
-} */
+}
 
 .search_btn input {
   width: 134px;
@@ -572,25 +557,14 @@ body {
   .title_content {
     margin-right: 0px;
   }
-
   .shop_img {
     display: none;
-  }
-
-  .footer_menu {
-    padding-left: 50px;
-    display: flex;
-    gap: 54px;
-  }
-
-  .copy {
-    padding-right: 50px;
   }
 }
 
 @media (max-width: 1625px) {
   .title_content .title {
-    width: calc((100% - 8px) / 2);
+    width: calc((100% - 20px) / 2);
   }
 
   .title_img {
@@ -681,7 +655,8 @@ body {
   .sec_2 .container,
   .sec_3 .container,
   .sec_4 .container,
-  .sec_5 .container {
+  .sec_5 .container,
+  .footer_area .container {
     padding-top: 80px;
     padding-bottom: 60px;
   }
@@ -811,13 +786,11 @@ body {
 }
 
 @media (max-width: 760px) {
-  .wrap.active {
-    opacity: 1;
-  }
   .sec_2 .container,
   .sec_3 .container,
   .sec_4 .container,
-  .sec_5 .container {
+  .sec_5 .container,
+  .footer_area .container {
     padding-top: 60px;
     padding-bottom: 32px;
   }
@@ -868,13 +841,9 @@ body {
     display: none;
   }
 
-  .card {
-    width: 50%;
-  }
-
   .card_img {
-    width: 100%;
-    height: 400px;
+    width: 165px;
+    height: 226px;
   }
 
   .card_text {
@@ -891,12 +860,14 @@ body {
     display: none;
   }
 
+  .title_content .title {
+    width: 300px;
+  }
+
   .title_content {
     justify-content: center;
     align-items: center;
-    padding-left: 16px;
-    padding-right: 16px;
-    gap: 8px;
+    flex-direction: column;
   }
 
   .title_text {
@@ -912,7 +883,8 @@ body {
   }
 
   .title_img {
-    height: 220px;
+    width: 300px;
+    height: 310px;
   }
 
   .arrival_img {
@@ -959,36 +931,10 @@ body {
   }
 
   .video {
-    height: 500px;
-  }
-
-  .footer_area .container {
-    padding-top: 40px;
-    padding-bottom: 32px;
+    height: 300px;
   }
 
   .footer_text {
     font-size: 12px;
   }
 }
-
-@media (max-width: 450px) {
-  .card_img {
-    height: 260px;
-  }
-}
-
-/* .title_content {
-        justify-content: center;
-        align-items: center;
-        padding-left: 16px;
-        /* padding-right: 16px;
-        gap: 8px;
-
-        .title  너비 뺴기
-
-        .title_img {ss
-        /* width: 300px; */
-/* height: 220px;
-
-        그리고 전체 컬크 식에서 빼기 8px */
